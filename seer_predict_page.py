@@ -49,16 +49,16 @@ def show_predict_page_seer():
         "Distant"
     )
 
-    AGE = st.slider("Age at diagnosis in years: ", 0, 100, 60)
+    AGE = st.slider("Age at diagnosis in years: ", 0, 85, 50)
     st.write('You selected:', AGE)
 
     SURGERY_PERFORMED = st.selectbox("Was surgery performed?: ", surgery)
     st.write('You selected:', SURGERY_PERFORMED)
 
-    TUMOR_SIZE = st.slider("Tumor size in millimeters: ", 0, 1000, 30)
+    TUMOR_SIZE = st.slider("Tumor size in millimeters: ", 0, 998, 10)
     st.write('You selected:', TUMOR_SIZE)   
 
-    NODES = st.slider("Regional nodes positive: ", 0, 99, 20)
+    NODES = st.slider("Regional nodes positive: ", 0, 55, 30)
     st.write('You selected:', NODES)
 
     NEOADJ = st.selectbox('What was the response to neoadjuvant treatment?', neoadj)

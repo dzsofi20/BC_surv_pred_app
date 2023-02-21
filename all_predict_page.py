@@ -35,10 +35,10 @@ def show_predict_page_all():
         "Positive"
     )
 
-    AGE = st.slider("Age at diagnosis in years: ", 0, 100, 60)
+    AGE = st.slider("Age at diagnosis in years: ", 0, 85, 60)
     st.write('You selected:', AGE)
 
-    TUMOR_SIZE = st.slider("Tumor size in millimeters: ", 0, 1000, 30)
+    TUMOR_SIZE = st.slider("Tumor size in millimeters: ", 0, 998, 30)
     st.write('You selected:', TUMOR_SIZE)   
 
     ER_STATUS = st.selectbox('Estrogene receptor status: ', ER_STATUS)
