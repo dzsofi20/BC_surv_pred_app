@@ -83,5 +83,5 @@ def show_predict_page_seer():
         X[:,6] = le_surgery.transform(X[:,6])
         X = X.astype(float)
 
-        surv = regr.predict(X)
+        surv = regr.predict(X.values)
         st.subheader(f"The estimated survival in months: {surv[0]}")
