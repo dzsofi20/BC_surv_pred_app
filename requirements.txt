@@ -9,7 +9,7 @@ scikit-learn==1.2.0
 scipy==1.9.1
 seaborn==0.12.0
 smogn==0.1.2
-streamlit==1.42.0
+streamlit==1.29.0
 sweetviz==2.1.4
 tensorflow==2.11.0
 torch==1.12.1
